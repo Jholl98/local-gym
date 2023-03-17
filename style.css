@@ -1,5 +1,219 @@
-*{
+/* *{
     border: 1px solid red;
+} */
+
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    margin: 0px;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    position: fixed;
+    background-color: rgb(210, 198, 198);
+    width: 100%;
+    top: 0px;
+    height: 60px;
+}
+
+.nav-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.navbar-brand{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 5%;
+}
+
+.navbar-list{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 60%;
+    margin-left: 5%;
+}
+
+.nav-item{
+    margin: 10px;
+    width: 100%;
+    height: 100%;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+a:hover{
+    color: rgb(134, 87, 134);
+}
+
+.background{
+    z-index: -1;
+    position: fixed;
+    background-size: cover;
+    justify-content: center;
+}
+
+.bannerfeat{
+    z-index: 1;
+    height: 19em;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-size: 2em;
+}
+.main-tile-dimension{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-content: flex-start;
+    justify-content: space-between;
+    padding-bottom: 20px;
+}
+
+/* .golf-class{
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    height: 100px;
+    background: linear-gradient(to bottom, rgba(255,255,255,0), rgb(0,0,0));
+} */
+
+.wrap-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: white;
+    padding-bottom: 20px;
+}
+
+.wrapper{
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    grid-gap: 60px;
+}
+
+.box{
+    max-width: 500px;
+    height: auto;
+}
+
+.instructor-tile{
+    background-color: white;
+}
+
+.image-container-instructors{
+    max-width: 300px;
+    height: auto;
+    width: 300px;
+    object-fit: cover;
+}
+
+.grid-image{
+    max-width: 300px;
+    height: auto;
+    object-fit: cover;
+}
+
+.grid-text{
+    text-align: center;
+}
+
+.instructors-header{
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    height: 100px;
+    align-items: flex-end;
+    background: linear-gradient(to bottom, rgba(255,255,255,0), rgb(0,0,0));
+}
+
+.local-schedule{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 10%;
+    color: white;
+}
+
+.schedule-container{
+    background-color: rgba(0,0,0,.5);
+    padding: 5%;
+}
+
+table{
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td,th{
+    border: 1px solid black;
+    text-align: left;
+    padding: 8px;
+}
+
+th{
+    font-weight: 900;
+}
+
+footer{
+    margin-bottom: 0px;
+}
+
+.contact-info-bottom{
+    background-color: whitesmoke;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding-top: 30px;
+    justify-content: space-evenly;
+}
+
+.footinfo{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    font: 0.6em;
+}
+
+.footnotes{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    font: 0.6em;
+}
+
+.social{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    font: 0.6em;
+}
+
+.foothead{
+    font-size: 2em;
+}
+
+.tiny{
+    margin: 3px;
 }
 
 .signin-btn{
@@ -8,4 +222,5 @@
     vertical-align: middle;
     text-align: center;
     cursor: pointer;
+    border-color: gray;
 }
